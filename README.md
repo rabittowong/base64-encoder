@@ -72,9 +72,5 @@ Content-Type: text/plain
 - Ensure that the uploaded file size does not exceed the server's configured limits (default 10MB)
 - Validate that the Base64 string is properly formatted to avoid errors during conversion
 
-## Contribution
-
-Contributions are welcome! Please feel free to submit issues or pull requests to enhance the functionality or performance of the application.
-
 ## Disclaimer
 This project is intended for educational and research purposes only. Users should ensure compliance with all applicable laws and regulations when utilizing this software.
