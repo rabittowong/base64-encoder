@@ -20,7 +20,7 @@ public class FileConversionController {
             String base64String = fileConversionService.convertZipToBase64(file);
             return ResponseEntity.ok(base64String);
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error converting ZIP to Base64: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error converting Zip to Base64: " + e.getMessage());
         }
     }
 
