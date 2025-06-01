@@ -21,13 +21,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @SpringBootTest
 public class ConvertControllerIntegrationTest {
-
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     public void testZipToBase64_shouldReturnCorrectResult_whenInvoked() throws Exception {
-
         File file = new File("src/test/resources/plain_file.zip");
         byte[] fileByte = FileUtils.readFileToByteArray(file);
         MockMultipartFile multipartFile = new MockMultipartFile("file", "plain_file.zip", MediaType.MULTIPART_FORM_DATA_VALUE, fileByte);
@@ -42,7 +40,6 @@ public class ConvertControllerIntegrationTest {
 
     @Test
     public void testBase64ToZip_shouldReturnCorrectResult_whenInvoked() throws Exception {
-
         File file = new File("src/test/resources/plain_file.zip");
         byte[] fileByte = FileUtils.readFileToByteArray(file);
 

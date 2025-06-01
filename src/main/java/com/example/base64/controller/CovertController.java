@@ -11,12 +11,10 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("/convert")
 public class CovertController {
-
     private final ConvertService convertService;
 
     @PostMapping("/zip-to-base64")
     public ResponseEntity<String> zipToBase64(@RequestParam("file") MultipartFile file) {
-
         try {
             String base64String = convertService.convertZipToBase64(file);
             return ResponseEntity.ok(base64String);
@@ -29,7 +27,6 @@ public class CovertController {
 
     @PostMapping("/base64-to-zip")
     public ResponseEntity<byte[]> base64ToZip(@RequestBody String base64String) {
-
         try {
             byte[] zipFile = convertService.convertBase64ToZip(base64String);
             return ResponseEntity.ok()
