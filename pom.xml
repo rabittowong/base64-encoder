@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>base64-encoder</artifactId>
+    <artifactId>base64-zip-converter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>base64-encoder</name>
-    <description>Base64 Encoder for Spring Boot</description>
+    <name>base64-zip-converter</name>
+    <description>Base64 Zip Converter for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
     </properties>
